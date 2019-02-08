@@ -2,7 +2,7 @@
   "name": "furgo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andribs.github.io/Chuck-jokes/",
+  "homepage": "https://andribs.github.io/ch-jokes/",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "cors-anywhere": "^0.4.1",

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SingleJoke from '../SingleJoke/SingleJoke';
 import ListItem from '../ListItem/ListItem';
-import { Route, NavLink } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './List.css'
 
 class List extends Component {
