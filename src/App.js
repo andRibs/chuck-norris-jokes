@@ -31,8 +31,6 @@ class App extends Component {
           onClick={() => { this.handleCategoryClick(cat) }} key={cat}>
           {cat}
         </li>)
-
-
     })
 
     return (
