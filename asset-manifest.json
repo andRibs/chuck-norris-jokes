@@ -1,15 +1,15 @@
 {
-  "main.css": "/ch-jokes/static/css/main.d90d275d.chunk.css",
-  "main.js": "/ch-jokes/static/js/main.60b910b1.chunk.js",
-  "main.js.map": "/ch-jokes/static/js/main.60b910b1.chunk.js.map",
-  "static/css/1.0a9cb1c3.chunk.css": "/ch-jokes/static/css/1.0a9cb1c3.chunk.css",
-  "static/js/1.7ced3702.chunk.js": "/ch-jokes/static/js/1.7ced3702.chunk.js",
-  "static/js/1.7ced3702.chunk.js.map": "/ch-jokes/static/js/1.7ced3702.chunk.js.map",
-  "runtime~main.js": "/ch-jokes/static/js/runtime~main.4c1d72e5.js",
-  "runtime~main.js.map": "/ch-jokes/static/js/runtime~main.4c1d72e5.js.map",
-  "static/css/main.d90d275d.chunk.css.map": "/ch-jokes/static/css/main.d90d275d.chunk.css.map",
-  "static/css/1.0a9cb1c3.chunk.css.map": "/ch-jokes/static/css/1.0a9cb1c3.chunk.css.map",
-  "index.html": "/ch-jokes/index.html",
-  "precache-manifest.b685c5f9532cbe1d4595141f0fe37883.js": "/ch-jokes/precache-manifest.b685c5f9532cbe1d4595141f0fe37883.js",
-  "service-worker.js": "/ch-jokes/service-worker.js"
+  "main.css": "/chuck-norris-jokes/static/css/main.d90d275d.chunk.css",
+  "main.js": "/chuck-norris-jokes/static/js/main.34926cc1.chunk.js",
+  "main.js.map": "/chuck-norris-jokes/static/js/main.34926cc1.chunk.js.map",
+  "static/css/1.0a9cb1c3.chunk.css": "/chuck-norris-jokes/static/css/1.0a9cb1c3.chunk.css",
+  "static/js/1.7ced3702.chunk.js": "/chuck-norris-jokes/static/js/1.7ced3702.chunk.js",
+  "static/js/1.7ced3702.chunk.js.map": "/chuck-norris-jokes/static/js/1.7ced3702.chunk.js.map",
+  "runtime~main.js": "/chuck-norris-jokes/static/js/runtime~main.2f2ef35d.js",
+  "runtime~main.js.map": "/chuck-norris-jokes/static/js/runtime~main.2f2ef35d.js.map",
+  "static/css/1.0a9cb1c3.chunk.css.map": "/chuck-norris-jokes/static/css/1.0a9cb1c3.chunk.css.map",
+  "static/css/main.d90d275d.chunk.css.map": "/chuck-norris-jokes/static/css/main.d90d275d.chunk.css.map",
+  "index.html": "/chuck-norris-jokes/index.html",
+  "precache-manifest.215e67137a1b87044966717997b270c5.js": "/chuck-norris-jokes/precache-manifest.215e67137a1b87044966717997b270c5.js",
+  "service-worker.js": "/chuck-norris-jokes/service-worker.js"
 }

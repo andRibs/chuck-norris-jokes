@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ch-jokes/precache-manifest.b685c5f9532cbe1d4595141f0fe37883.js"
+  "/chuck-norris-jokes/precache-manifest.215e67137a1b87044966717997b270c5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/ch-jokes/index.html", {
+workbox.routing.registerNavigationRoute("/chuck-norris-jokes/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
