@@ -9,7 +9,7 @@ class List extends Component {
         gotJokes: [],
         loadingState: false,
         clicked: '',
-        category:'random'
+        category:''
     }
 
     //Fetches jokes and saves them to state
@@ -34,14 +34,11 @@ class List extends Component {
 
     //Listens for change of category which is sent as props from parent App.js
     componentWillReceiveProps(nextProps) {
-        console.log(nextProps.category+'next')
-        console.log(this.state.category+'state')
 
-        if(this.state.category != nextProps.category){
+        if(this.state.category !== nextProps.category){
             this.setState({gotJokes:[], category:nextProps.category})
 
             for (let x = 0; x < 10; x++) {
-                console.log(this.state.category+'loop')
 
                 this.loadMoreItems(nextProps.category);
             }
@@ -51,8 +48,8 @@ class List extends Component {
     //function to load another joke based on the current category stored in state
     loadMoreItems(category) {
         this.setState({ loadingState: true });
-        let url = (category=='random' || category==undefined? 'random' : 'category='+category)
-        fetch('https://api.chucknorris.io/jokes/'+url)
+        let uri = (category==='' || category===undefined? '' : '?category='+category)
+        fetch('https://api.chucknorris.io/jokes/random'+uri)
             .then(response => response.json())
             .then(data => this.setState(prevState => ({
                 gotJokes: [...prevState.gotJokes, data.value],
@@ -66,8 +63,8 @@ class List extends Component {
 
     render() {
         //maps all jokes stored in state to display
-        let jokesList = this.state.gotJokes.map(item => {
-            return <ListItem key={item} onSingleClicked={() => { this.onSingleClicked(item) }} item={item} />
+        let jokesList = this.state.gotJokes.map((item,index) => {
+            return <ListItem key={index} onSingleClicked={() => { this.onSingleClicked(item) }} item={item} />
         })
 
         //conditional that decides to display a single joke or the feed

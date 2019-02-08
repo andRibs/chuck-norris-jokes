@@ -5,7 +5,7 @@ import List from './components/List/List'
 class App extends Component {
   state = {
     categories: ['random'],
-    category: 'random',
+    category: '',
   }
 
   //Fetch categories from chuck norris API
