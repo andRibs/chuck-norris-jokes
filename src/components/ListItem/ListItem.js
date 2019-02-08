@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route, NavLink } from 'react-router-dom';
-import SingleJoke from '../SingleJoke/SingleJoke';
+import { NavLink } from 'react-router-dom';
 import './ListItem.css';
 
 //One item in the feed of jokes

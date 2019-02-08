@@ -13,7 +13,7 @@ const singleJoke = (props) => {
                 </div>
                 <div className='col-md-6'>
 
-                    <img src='./images/chuck-norris.jpg' className="rounded mx-auto d-block" height="300" />
+                    <img src='./chuck-norris-jokes/images/chuck-norris.jpg' className="rounded mx-auto d-block" height="300" />
                 </div>
             </div>
         </div>

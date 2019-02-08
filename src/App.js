@@ -24,7 +24,7 @@ class App extends Component {
 
     //Maps and displays the catgories stored in state 
     let categoriesOutput = this.state.categories.map(cat => {
-      let catClass = cat == this.state.category ? 'btn btn-primary cat-btn active' : 'btn btn-primary cat-btn'
+      let catClass = ((cat === this.state.category) ? 'btn btn-primary cat-btn active' : 'btn btn-primary cat-btn')
       return (
         <li
           className={catClass}

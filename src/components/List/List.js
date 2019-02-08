@@ -18,7 +18,7 @@ class List extends Component {
         for (let x = 0; x < 10; x++) {
             this.loadMoreItems();
         }
-    //Adds eventListener for the joke feed to load more when scrolled to bottom
+        //Adds eventListener for the joke feed to load more when scrolled to bottom
         this.refs.iScroll.addEventListener("scroll", () => {
             if (this.refs.iScroll.scrollTop + this.refs.iScroll.clientHeight >= this.refs.iScroll.scrollHeight) {
                 this.loadMoreItems();
@@ -29,12 +29,18 @@ class List extends Component {
     componentDidUpdate() {
         window.onpopstate = (e) => {
             this.setState({clicked:''});
+            this.refs.iScroll.addEventListener("scroll", () => {
+                if (this.refs.iScroll.scrollTop + this.refs.iScroll.clientHeight >= this.refs.iScroll.scrollHeight) {
+                    this.loadMoreItems();
+                }
+            });
         }
+        
+
     }
 
     //Listens for change of category which is sent as props from parent App.js
     componentWillReceiveProps(nextProps) {
-
         if(this.state.category !== nextProps.category){
             this.setState({gotJokes:[], category:nextProps.category})
 
@@ -62,6 +68,7 @@ class List extends Component {
     }
 
     render() {
+        
         //maps all jokes stored in state to display
         let jokesList = this.state.gotJokes.map((item,index) => {
             return <ListItem key={index} onSingleClicked={() => { this.onSingleClicked(item) }} item={item} />
