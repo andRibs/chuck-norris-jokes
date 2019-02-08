@@ -2,9 +2,11 @@
   "name": "furgo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://andribs.github.io/chuck-norris-jokes/",
   "dependencies": {
     "bootstrap": "^4.2.1",
     "cors-anywhere": "^0.4.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router": "^4.3.1",
@@ -15,6 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
